@@ -1,0 +1,14 @@
+#!/usr/bin/env gnuplot
+
+set terminal svg
+set output "table_1664.svg"
+set datafile separator "\t"
+set xdata time
+set timefmt "%Y-%m-%d %H:%M"
+set format x "%m-%d"
+set xtics rotate 86400
+set format y "%.0f%%"
+set autoscale xfix
+set key bmargin horizontal
+set title "% winner if nominated 2016 POTUS"
+plot for [col=2:6] "table_1664.tsv" using 1:col with lines title columnheader
