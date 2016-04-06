@@ -2,7 +2,7 @@ candidates = ["Hillary Clinton", "Ted Cruz", "John Kasich", "Bernie Sanders", "D
 candidates_counts = Array(candidates.length).fill(0);
 candidates_sums = Array(candidates.length).fill(0);
 
-console.log("Time,"+candidates.join("\t"));
+console.log("Time\t"+candidates.join("\t"));
 
 function candidate_from(a, name) {
   for (i in a) {
