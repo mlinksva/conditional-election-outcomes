@@ -6,7 +6,7 @@ and
 [non-financialized](http://socialgoals.blogspot.com/2014/10/gdp-versus-mental-well-being.html)
 social goals?
 
-Maybe gather and analyze some data here.
+[Maybe](http://gondwanaland.com/mlog/2016/04/05/aggregated-prediction-market-election-outcomes/) gather and analyze some data here.
 
 The 2016 POTUS nomination horse race and the upcoming general
 election horse race:
