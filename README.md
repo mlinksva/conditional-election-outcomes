@@ -11,7 +11,7 @@ Maybe gather and analyze some data here.
 The 2016 POTUS nomination horse race and the upcoming general
 election horse race:
 
-![2016 POTUS Nominee-Winner](https://raw.githubusercontent.com/mlinksva/conditional-election-outcomes/master/2016/usa/president/table_1664.svg)
+![2016 POTUS Nominee-Winner](./2016/usa/president/table_1664.png)
 
 Old related commentary:
 

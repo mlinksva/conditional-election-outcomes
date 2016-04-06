@@ -12,3 +12,6 @@ set autoscale xfix
 set key bmargin horizontal
 set title "% winner if nominated 2016 POTUS"
 plot for [col=2:6] "table_1664.tsv" using 1:col with lines title columnheader
+set terminal png
+set output "table_1664.png"
+plot for [col=2:6] "table_1664.tsv" using 1:col with lines title columnheader
