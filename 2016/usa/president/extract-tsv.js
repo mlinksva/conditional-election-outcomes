@@ -12,7 +12,12 @@ function candidate_from(a, name) {
 
 function win_if_nominee(win, nominee) {
   if (nominee == 0) return "";
-  return Math.round(100 * win / nominee);
+  p = Math.round(100 * win / nominee);
+  if (p >= 100) {
+    return "";
+  } else {
+    return p;
+  }
 }
 
 function date_fix(timestamp) {
