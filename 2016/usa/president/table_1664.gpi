@@ -6,7 +6,9 @@ set datafile separator "\t"
 set xdata time
 set timefmt "%Y-%m-%d %H:%M"
 set format x "%m-%d"
-set xtics rotate 86400
+set xtics rotate
+set autoscale xfixmin
+set autoscale xfixmax
 set format y "%.0f%%"
 set key bmargin horizontal
 set title "% winner if nominated 2016 POTUS"
