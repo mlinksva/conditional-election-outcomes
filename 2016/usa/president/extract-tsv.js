@@ -13,7 +13,7 @@ function candidate_from(a, name) {
 function win_if_nominee(win, nominee) {
   if (nominee == 0) return "";
   p = Math.round(100 * win / nominee);
-  if (p >= 100) {
+  if (p >= 100 || p == 0) {
     return "";
   } else {
     return p;
@@ -40,10 +40,13 @@ var t = require("./table_1664.json");
 t.history.forEach(function(entry) {
   row = [date_fix(entry.timestamp)];
   for (j in candidates) {
+    p = "";
     candidate_table = candidate_from(entry.table, candidates[j]);
-    win = candidate_table[2].split(' ')[0];
-    nominee = candidate_table[3].split(' ')[0];
-    p = win_if_nominee(win, nominee);
+    if (candidate_table) {
+      win = candidate_table[2].split(' ')[0];
+      nominee = candidate_table[3].split(' ')[0];
+      p = win_if_nominee(win, nominee);
+    }
     if (p != "") {
       candidates_counts[j]++;
       candidates_sums[j] += p;
